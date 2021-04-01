@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="txt_todo">TODO</string>
+    <string name="txt_date">4 april 2021</string>
+    <string name="txt_breaking_news">Breaking News</string>
+    <string name="txt_judul">Outbund angkatan 9 SMK IT SMart Informatika Surakarta</string>
+    <string name="txt_devan_john">DeVan John</string>
+    <string name="txt_all">All</string>
+    <string name="txt_information">Information</string>
+    <string name="txt_magazine">Magazine</string>
+    <string name="txt_media">Media</string>
+    <string name="txt_business">Business</string>
+    <string name="txt_internasional">Internasional</string>
+</resources>
