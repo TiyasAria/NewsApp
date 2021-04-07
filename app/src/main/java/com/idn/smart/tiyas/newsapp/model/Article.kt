@@ -3,7 +3,7 @@ package com.idn.smart.tiyas.newsapp.model
 
 import android.annotation.SuppressLint
 import com.google.gson.annotations.SerializedName
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 import android.os.Parcelable
 
 @SuppressLint("ParcelCreator")

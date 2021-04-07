@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+//    id 'kotlin-android-extensions'
     id 'kotlin-parcelize'
 }
 
@@ -25,6 +26,7 @@ android {
             //cara untuk memanggil base-url dan api key nya , untuk sekarang kita tambahkan disini , tidak akan membuat class network
             buildConfigField "String", "BASE_URL", '"https://newsapi.org/v2/"'
             buildConfigField "String", "API_KEY", '"f342cff3d5de4e6abc0604909f533bf4"'
+            buildConfigField "String", "COUNTRY", '"id"'
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         //ketika di uji coba di install di hp
@@ -33,6 +35,7 @@ android {
             //cara untuk memanggil base-url dan api key nya , untuk sekarang kita tambahkan disini , tidak akan membuat class network
             buildConfigField "String", "BASE_URL", '"https://newsapi.org/v2/"'
             buildConfigField "String", "API_KEY", '"f342cff3d5de4e6abc0604909f533bf4"'
+            buildConfigField "String", "COUNTRY", '"id"'
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

@@ -1,10 +1,14 @@
 package com.idn.smart.tiyas.newsapp
 
 import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.idn.smart.tiyas.newsapp.databinding.ItemNewsBinding
 import com.idn.smart.tiyas.newsapp.model.Article
+
 
 /**
 nah disini kita akan membuat class adapter karena dia menggunakan recycler maka kita extend (:) ke recycler, dan karena dia
@@ -17,21 +21,40 @@ nah disini kita akan membuat class adapter karena dia menggunakan recycler maka 
  lalu kita panggil List<class modelnya> agr mencegah nullable maka tambahkan (?)
  */
 
-class NewsAdapter(var context: Context, var listNews : List<Article?>?): RecyclerView.Adapter<NewsAdapter.NewsViewHolder>(){
+class NewsAdapter(var context: Context, var listNews : List<Article?>?): RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
     inner class NewsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        //untuk menggaungkan data dan view,
+        private val itemBinding = ItemNewsBinding.bind(view)
+        fun bind(news: Article) {
+            with(itemView) {
+                itemBinding.tvTitleItemNews.text = news.title
+                itemBinding.tvAuthorItemNews.text = news.author
+                itemBinding.tvTimeItemNews.text = news.publishedAt
 
+                Glide.with(context)
+                    .load(news.urlToImage)
+                    .centerCrop()
+                    .into(itemBinding.ivItemNews)
 
+                itemView.setOnClickListener {
+
+                }
+            }
+        }
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsAdapter.NewsViewHolder {
-        TODO("Not yet implemented")
+        //penggabungan layout , layout mana yang akan digabungkan
+        val view = LayoutInflater.from(context).inflate(R.layout.item_news, parent, false)
+        return NewsViewHolder(view)
     }
 
+    //mengatur data sesuai posisi list
     override fun onBindViewHolder(holder: NewsAdapter.NewsViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(listNews?.get(position)!!)
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    //menghitung jumlah data nya ada berapa
+    override fun getItemCount(): Int = listNews!!.size
 }

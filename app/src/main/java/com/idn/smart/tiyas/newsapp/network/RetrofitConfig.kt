@@ -18,6 +18,7 @@ object RetrofitConfig {
     //untuk menghubungkan ke client nya
     val client = OkHttpClient.Builder().addInterceptor(interceptor)
         .retryOnConnectionFailure(true)
+            //ketika prosesnya lebih dr 30 detik , berarti datanya gagall bisa karena ga ada koneksi internet
         .connectTimeout(30, TimeUnit.SECONDS)
         .build()
 
@@ -26,11 +27,19 @@ object RetrofitConfig {
         .setLenient()
         .create()
 
+
     //entry data
+    //buat atur url mana yang mau dieksekusi
     val retrofit = Retrofit.Builder()
         .baseUrl(BuildConfig.BASE_URL)
         .client(client)
+            //buat convert ke gson
         .addConverterFactory(GsonConverterFactory.create(gson))
+        .build()
+
+    //function untuk menyambung end point dari class api service
+    fun getInstance() : ApiService = retrofit.create(ApiService::class.java)
+
 
 
 
