@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
 //    id 'kotlin-android-extensions'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -72,6 +73,18 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation platform('com.google.firebase:firebase-bom:27.0.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-core:18.0.3'
+    implementation 'com.google.firebase:firebase-auth:20.0.4'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:19.2.2'
+    implementation 'com.google.firebase:firebase-database-ktx:19.7.0'
+
+    implementation "org.jetbrains.anko:anko:0.10.8"
+
+
+
 
 
 

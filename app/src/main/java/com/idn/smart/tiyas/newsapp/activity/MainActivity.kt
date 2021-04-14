@@ -1,4 +1,4 @@
-package com.idn.smart.tiyas.newsapp
+package com.idn.smart.tiyas.newsapp.activity
 
 import android.app.ProgressDialog
 import android.content.Context
@@ -10,6 +10,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.idn.smart.tiyas.newsapp.BuildConfig
+import com.idn.smart.tiyas.newsapp.NewsAdapter
+import com.idn.smart.tiyas.newsapp.R
 import com.idn.smart.tiyas.newsapp.databinding.ActivityMainBinding
 import com.idn.smart.tiyas.newsapp.model.ResponseNews
 import com.idn.smart.tiyas.newsapp.network.RetrofitConfig

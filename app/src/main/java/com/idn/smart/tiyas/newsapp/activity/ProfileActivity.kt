@@ -1,9 +1,10 @@
-package com.idn.smart.tiyas.newsapp
+package com.idn.smart.tiyas.newsapp.activity
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.idn.smart.tiyas.newsapp.R
 
 class ProfileActivity : AppCompatActivity() {
     // untuk men clear suatu activity

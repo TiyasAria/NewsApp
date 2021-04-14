@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "188253053656",
+    "project_id": "notlarim-app",
+    "storage_bucket": "notlarim-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188253053656:android:c98d4da7616f2bbd6a6dad",
+        "android_client_info": {
+          "package_name": "com.idn.smart.tiyas.newproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188253053656-kcpj1fqifl879ge94un22v11l4gqbbcl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idn.smart.tiyas.newproject",
+            "certificate_hash": "681b1a373a85a98eb83ccfb9b34e7fe6af98f441"
+          }
+        },
+        {
+          "client_id": "188253053656-plhkpg9p82qsjegpg7p36lnnif06vjgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRKqbve6Gg74V_uA4GnCBdwnUYwTKNU8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188253053656-plhkpg9p82qsjegpg7p36lnnif06vjgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188253053656:android:116f04227e4b5fd36a6dad",
+        "android_client_info": {
+          "package_name": "com.idn.smart.tiyas.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188253053656-btajp5mh3qts6n76ivm1neu7c8i3jt4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idn.smart.tiyas.newsapp",
+            "certificate_hash": "681b1a373a85a98eb83ccfb9b34e7fe6af98f441"
+          }
+        },
+        {
+          "client_id": "188253053656-plhkpg9p82qsjegpg7p36lnnif06vjgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRKqbve6Gg74V_uA4GnCBdwnUYwTKNU8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188253053656-plhkpg9p82qsjegpg7p36lnnif06vjgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188253053656:android:ba08cf66f5ec405c6a6dad",
+        "android_client_info": {
+          "package_name": "com.idn.smart.tiyas.notlarimapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188253053656-rgc2qtpt1agg7dtt2ghcc2birrh3bm6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idn.smart.tiyas.notlarimapp",
+            "certificate_hash": "681b1a373a85a98eb83ccfb9b34e7fe6af98f441"
+          }
+        },
+        {
+          "client_id": "188253053656-plhkpg9p82qsjegpg7p36lnnif06vjgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRKqbve6Gg74V_uA4GnCBdwnUYwTKNU8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188253053656-plhkpg9p82qsjegpg7p36lnnif06vjgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

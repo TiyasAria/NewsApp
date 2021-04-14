@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.idn.smart.tiyas.newsapp.activity.DetailActivity
 import com.idn.smart.tiyas.newsapp.databinding.ItemNewsBinding
 import com.idn.smart.tiyas.newsapp.model.Article
+import org.jetbrains.anko.intentFor
 
 
 /**
@@ -37,8 +39,13 @@ class NewsAdapter(var context: Context, var listNews : List<Article?>?): Recycle
                     .centerCrop()
                     .into(itemBinding.ivItemNews)
 
+                //ini untuk ke detail
                 itemView.setOnClickListener {
-
+                    itemView.context?.startActivity(
+                        itemView.context.intentFor<DetailActivity>(
+                            "EXTRA_NEWS" to news
+                        )
+                    )
                 }
             }
         }
