@@ -20,6 +20,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         detailActivityBinding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(detailActivityBinding.root)
+        supportActionBar?.hide()
 
         detailActivityBinding.fbBackDetail.setOnClickListener {
             startActivity(Intent(MainActivity.getLaunchService(this)))

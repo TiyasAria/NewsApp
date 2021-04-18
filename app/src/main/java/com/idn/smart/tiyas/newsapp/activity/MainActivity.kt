@@ -16,6 +16,7 @@ import com.idn.smart.tiyas.newsapp.R
 import com.idn.smart.tiyas.newsapp.databinding.ActivityMainBinding
 import com.idn.smart.tiyas.newsapp.model.ResponseNews
 import com.idn.smart.tiyas.newsapp.network.RetrofitConfig
+import org.jetbrains.anko.intentFor
 import retrofit2.Call
 import retrofit2.Response
 import java.text.SimpleDateFormat
@@ -59,12 +60,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         //cara memanggil menggunakan main binding
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
+        supportActionBar?.hide()
 
         // terus untuk yang item2 nya kita panggil menggunakan mainbinding.nama itemnya
         mainBinding.ivProfileSetting.setOnClickListener(this)
 
         mainBinding.tvDateMain.text = date.toString("dd/MM/yyyy")
         getNews()
+
+
 
     }
 
@@ -123,6 +127,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
             R.id.iv_profile_setting -> startActivity(Intent(ProfileActivity.getLaunchService(this)))
+
         }
     }
 

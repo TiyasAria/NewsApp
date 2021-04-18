@@ -30,6 +30,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         signUpActivityBinding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(signUpActivityBinding.root)
+        supportActionBar?.hide()
 
         signUpActivityBinding.ibBackSignup.setOnClickListener(this)
         signUpActivityBinding.btnSignup.setOnClickListener(this)

@@ -33,6 +33,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
 
         signInBinding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(signInBinding.root)
+        supportActionBar?.hide()
 
         firebaseAuth = FirebaseAuth.getInstance()
 
